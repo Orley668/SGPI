@@ -40,7 +40,14 @@ namespace SGPI.Controllers
           
             return View();
         }
-       
+        [HttpPost]
+        public IActionResult PagosEstudiante(Pago pago)
+        {
+
+            context.Update(pago);
+            context.SaveChanges();
+            return View();
+        }
     }
 }
 

@@ -38,6 +38,24 @@ namespace SGPI.Controllers
         }
         public IActionResult Login()
         {
+
+            Usuario usuario = new Usuario();
+
+            usuario.PrimerNombre = "edwin";
+            usuario.SegundoNombre = "orley";
+            usuario.PrimerApellido = "guisao";
+            usuario.SegundoApellido = "torres";
+            usuario.Email = "edwinguisao65@gmail.com";
+            usuario.NumeroDocumento = "1001620522";
+            usuario.Password = "1234";
+            usuario.IdRol = 1; //Administrador
+            usuario.IdDoc = 1; //cedula
+            usuario.IdGenero = 1; //masculino
+            usuario.IdPrograma = 1; //especializacion
+
+
+            context.Add(usuario); //insert into usuario set
+            context.SaveChanges();
             return View();
         }
 
