@@ -53,6 +53,18 @@ namespace SGPI.Controllers
             usuario.IdGenero = 1; //masculino
             usuario.IdPrograma = 1; //especializacion
 
+            usuario.PrimerNombre = "carlos";
+            usuario.SegundoNombre = "andres";
+            usuario.PrimerApellido = "vitola";
+            usuario.SegundoApellido = "vergara";
+            usuario.Email = "carlos123@gmail.com";
+            usuario.NumeroDocumento = "1001620525";
+            usuario.Password = "1234";
+            usuario.IdRol = 2; //Administrador
+            usuario.IdDoc = 1; //cedula
+            usuario.IdGenero = 1; //masculino
+            usuario.IdPrograma = 1; //especializacion
+
 
             context.Add(usuario); //insert into usuario set
             context.SaveChanges();
