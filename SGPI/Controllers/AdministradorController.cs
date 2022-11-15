@@ -60,7 +60,7 @@ namespace SGPI.Controllers
             usuario.Email = "carlos123@gmail.com";
             usuario.NumeroDocumento = "1001620525";
             usuario.Password = "1234";
-            usuario.IdRol = 2; //Administrador
+            usuario.IdRol = 3; //Administrador
             usuario.IdDoc = 1; //cedula
             usuario.IdGenero = 1; //masculino
             usuario.IdPrograma = 1; //especializacion
