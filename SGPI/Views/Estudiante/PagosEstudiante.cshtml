@@ -1,0 +1,46 @@
+﻿@model SGPI.Models.Pago
+
+@{
+    ViewData["Title"] = "PagosEstudiante";
+    Layout = "_LayoutSGPI";
+}
+
+<link href="~/css/login.css" rel="stylesheet" />
+
+<div class="container">
+    <nav class="topnavA">
+        <a href="~/Estudiante/ActualizarEstudiante">Actualizar Estudiante</a>
+        <a class="active" href="~/Estudiante/PagosEstudiante">Pagos</a>
+        <button class="btnLogUpE">Cerrar Sesión</button>
+    </nav>
+    <form method="post">
+    <div class="cuacenter">
+        <div class="busT">
+            <div class="cont2">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>No. Pago</th>
+                            <th>Valor Pago</th>
+                            <th>Fecha Pago</th>
+                            <th>Comprobante Pago</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input asp-for="IdPago" type="text" /></td>
+                                <td><input asp-for="ValorPago" type="text" /></td>
+                                <td><input asp-for="Fecha" type="date" /></td>
+                                <td><input asp-for="Estado" type="text" /></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btnsPe">
+                    <button class="btnCS">Registrar Pago</button>
+            </div>
+        </div>
+    </div>
+     </form>
+</div>
